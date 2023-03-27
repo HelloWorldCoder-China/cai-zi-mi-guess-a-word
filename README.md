@@ -1,4 +1,5 @@
 # 猜数字guess a word
+# build Bata
 # 使用方法
 下载整个Build的文件夹或文件夹里的guess a word build**.zip，找到"guess a word.exe"运行，360可能出现警示。
 # How to use
