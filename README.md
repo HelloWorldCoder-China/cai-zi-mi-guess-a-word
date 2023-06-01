@@ -1,4 +1,5 @@
 # 猜数字guess a word
+# build1.6
 # 使用方法
 下载整个Build的文件夹或文件夹里的"猜字谜build**.zip"，找到"猜字谜.exe"运行，360可能出现警示。
 # How to use
