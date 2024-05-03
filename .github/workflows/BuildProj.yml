@@ -1,0 +1,32 @@
+# This workflow will install Python dependencies, run tests and lint with a single version of Python
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+
+name: Build
+
+on:
+  push:
+    branches: [ "code" ]
+  pull_request:
+    branches: [ "code" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install pyinstaller
+      run: |
+        python3 -m pip install --upgrade pip
+        pip3 install pyinstaller
+    - name: BuildPackge
+      run: |
+        pyinstaller 猜字谜build1.8.py
